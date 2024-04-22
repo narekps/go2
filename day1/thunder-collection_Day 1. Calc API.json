@@ -1,0 +1,95 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Day 1. Calc API",
+    "collectionId": "5e248751-a765-4cf9-9287-00868d553c75",
+    "dateExported": "2024-04-22T17:24:02.141Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fbc6f096-ccd4-4a2d-be21-3db5f09414ed",
+            "colId": "5e248751-a765-4cf9-9287-00868d553c75",
+            "containerId": "",
+            "name": "Info",
+            "url": "{{host}}:{{port}}/info",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2024-04-22T17:20:05.122Z",
+            "modified": "2024-04-22T17:20:22.334Z",
+            "headers": []
+        },
+        {
+            "_id": "49d4328e-bd4c-49ff-a16d-9315fa98fb44",
+            "colId": "5e248751-a765-4cf9-9287-00868d553c75",
+            "containerId": "",
+            "name": "First",
+            "url": "{{host}}:{{port}}/first",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-04-22T17:18:42.316Z",
+            "modified": "2024-04-22T17:18:59.271Z",
+            "headers": []
+        },
+        {
+            "_id": "bd9aec04-0eaa-49fe-9099-a2c54d50f569",
+            "colId": "5e248751-a765-4cf9-9287-00868d553c75",
+            "containerId": "",
+            "name": "Second",
+            "url": "{{host}}:{{port}}/second",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-22T17:19:35.548Z",
+            "modified": "2024-04-22T17:19:40.363Z",
+            "headers": []
+        },
+        {
+            "_id": "0cd744d5-d10b-4958-95db-9b0ef54dc432",
+            "colId": "5e248751-a765-4cf9-9287-00868d553c75",
+            "containerId": "",
+            "name": "Add",
+            "url": "{{host}}:{{port}}/add",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2024-04-22T17:20:42.879Z",
+            "modified": "2024-04-22T17:21:05.881Z",
+            "headers": []
+        },
+        {
+            "_id": "c1ff53fb-0d0c-4eab-91d4-152ef5700f17",
+            "colId": "5e248751-a765-4cf9-9287-00868d553c75",
+            "containerId": "",
+            "name": "Sub",
+            "url": "{{host}}:{{port}}/sub",
+            "method": "GET",
+            "sortNum": 27500,
+            "created": "2024-04-22T17:20:41.404Z",
+            "modified": "2024-04-22T17:21:09.710Z",
+            "headers": []
+        },
+        {
+            "_id": "fc52f65b-ccf4-4c8d-9bb2-7d79e5125c21",
+            "colId": "5e248751-a765-4cf9-9287-00868d553c75",
+            "containerId": "",
+            "name": "Mul",
+            "url": "{{host}}:{{port}}/mul",
+            "method": "GET",
+            "sortNum": 28750,
+            "created": "2024-04-22T17:20:39.243Z",
+            "modified": "2024-04-22T17:21:13.620Z",
+            "headers": []
+        },
+        {
+            "_id": "bd9a1b3f-9ef7-40b7-9238-ed2de2046c80",
+            "colId": "5e248751-a765-4cf9-9287-00868d553c75",
+            "containerId": "",
+            "name": "Div",
+            "url": "{{host}}:{{port}}/div",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-22T17:20:36.398Z",
+            "modified": "2024-04-22T17:21:20.739Z",
+            "headers": []
+        }
+    ],
+    "ref": "u4vYZeg63eqNGitMx4zObcueDXejJtnnkQUw_r4HHXUd634dfKUb9BioQ-Qi1GnWOmwml_5njybR-F-XA49NsA"
+}
