@@ -1,0 +1,147 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "TaskStoreAPI",
+    "collectionId": "5a94211d-7c4c-484a-8655-0094725d267b",
+    "dateExported": "2024-04-23T14:39:35.369Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a6297ba5-9ec3-4336-9aa5-f2c38b957bf9",
+            "colId": "5a94211d-7c4c-484a-8655-0094725d267b",
+            "containerId": "",
+            "name": "Get all tasks",
+            "url": "http://127.0.0.1:8080/api/v1/task",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-04-22T14:25:20.030Z",
+            "modified": "2024-04-23T14:06:15.831Z",
+            "headers": []
+        },
+        {
+            "_id": "64c2116b-6582-45e7-958b-6d213041aeb1",
+            "colId": "5a94211d-7c4c-484a-8655-0094725d267b",
+            "containerId": "",
+            "name": "Create task",
+            "url": "http://127.0.0.1:8080/api/v1/task",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-23T07:42:10.974Z",
+            "modified": "2024-04-23T14:39:16.140Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"text\": \"Task 1\",\n  \"tags\": [\n    \"tag1\",\n    \"tag2\"\n  ],\n  \"due\": \"2024-04-23T16:34:15Z\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7d94f062-c54d-4648-a358-5d8d08adc4fa",
+            "colId": "5a94211d-7c4c-484a-8655-0094725d267b",
+            "containerId": "",
+            "name": "Delete all tasks",
+            "url": "http://127.0.0.1:8080/api/v1/task",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-04-23T08:19:27.110Z",
+            "modified": "2024-04-23T14:06:25.588Z",
+            "headers": []
+        },
+        {
+            "_id": "15730421-9545-48ac-9813-ab04ec5e73a3",
+            "colId": "5a94211d-7c4c-484a-8655-0094725d267b",
+            "containerId": "",
+            "name": "Get tasks by tag",
+            "url": "http://127.0.0.1:8080/api/v1/task/tag1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-23T14:37:41.460Z",
+            "modified": "2024-04-23T14:39:07.743Z",
+            "headers": []
+        },
+        {
+            "_id": "48eed55b-432f-4185-b936-4f5ee455faa2",
+            "colId": "5a94211d-7c4c-484a-8655-0094725d267b",
+            "containerId": "",
+            "name": "Get task by id",
+            "url": "http://127.0.0.1:8080/api/v1/task/1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-23T07:47:31.004Z",
+            "modified": "2024-04-23T14:37:19.110Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"text\": \"Task 1\",\n  \"tags\": [\"tag1\", \"tag2\"],\n  \"due\": \"2006-01-02T15:04:05Z\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "bc1f656c-334b-4af5-9814-a2fffc18601d",
+            "colId": "5a94211d-7c4c-484a-8655-0094725d267b",
+            "containerId": "",
+            "name": "Get tasks by date",
+            "url": "http://127.0.0.1:8080/api/v1/task/2024/04/23",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-23T14:37:59.257Z",
+            "modified": "2024-04-23T14:38:27.097Z",
+            "headers": []
+        },
+        {
+            "_id": "1defa259-4773-47fb-9c87-4fa69f2cbc4b",
+            "colId": "5a94211d-7c4c-484a-8655-0094725d267b",
+            "containerId": "",
+            "name": "Update task by id",
+            "url": "http://127.0.0.1:8080/api/v1/task/1",
+            "method": "PUT",
+            "sortNum": 35000,
+            "created": "2024-04-23T08:19:58.407Z",
+            "modified": "2024-04-23T14:37:15.328Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"text\": \"Task 1asd\",\n  \"tags\": [\"tag1\", \"tag2\"],\n  \"due\": \"2006-01-02T15:04:05Z\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2346f27d-fd02-46b7-a6fe-a594ce12d7fe",
+            "colId": "5a94211d-7c4c-484a-8655-0094725d267b",
+            "containerId": "",
+            "name": "Delete task by id",
+            "url": "http://127.0.0.1:8080/api/v1/task/1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-04-23T08:18:36.148Z",
+            "modified": "2024-04-23T14:06:37.504Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"text\": \"Task 1\",\n  \"tags\": [\"tag1\", \"tag2\"],\n  \"due\": \"2006-01-02T15:04:05Z\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "pxYFPwqWyDmvqGItwVsqbEGM7Rj4W3rQu6Urd_B70MxzWF3HUT2JCkNEsq6ReNNALLZLIV-RqzopXW5QoGcbkw"
+}

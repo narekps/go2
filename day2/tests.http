@@ -1,0 +1,173 @@
+### Get all tasks
+GET http://{{host}}:{{port}}/api/v1/task
+Accept: application/json
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+
+    client.test("Response content-type is json", function () {
+        var type = response.contentType.mimeType;
+        client.assert(type === "application/json", "Expected 'application/json' but received '" + type + "'");
+    });
+%}
+
+### Create task
+POST http://{{host}}:{{port}}/api/v1/task
+Accept: application/json
+Content-Type: application/json
+
+{
+  "text": "Task 1",
+  "tags": [
+    "tag1",
+    "tag2"
+  ],
+  "due": "2024-04-24T16:34:15Z"
+}
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 201, "Response status is not 201");
+    });
+
+    client.test("Response content-type is json", function () {
+        var type = response.contentType.mimeType;
+        client.assert(type === "application/json", "Expected 'application/json' but received '" + type + "'");
+    });
+%}
+
+### Get task by id
+GET http://{{host}}:{{port}}/api/v1/task/1
+Accept: application/json
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+
+    client.test("Response content-type is json", function () {
+        var type = response.contentType.mimeType;
+        client.assert(type === "application/json", "Expected 'application/json' but received '" + type + "'");
+    });
+%}
+
+### Get task by id when bad id
+GET http://{{host}}:{{port}}/api/v1/task/bad_id
+Accept: application/json
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 400, "Response status is not 404");
+    });
+
+    client.test("Response content-type is json", function () {
+        var type = response.contentType.mimeType;
+        client.assert(type === "application/json", "Expected 'application/json' but received '" + type + "'");
+    });
+%}
+
+### Get task by id when not found
+GET http://{{host}}:{{port}}/api/v1/task/9999
+Accept: application/json
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 404, "Response status is not 404");
+    });
+
+    client.test("Response content-type is json", function () {
+        var type = response.contentType.mimeType;
+        client.assert(type === "application/json", "Expected 'application/json' but received '" + type + "'");
+    });
+%}
+
+### Update task by id
+PUT http://{{host}}:{{port}}/api/v1/task/1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "text": "Task 1 updated",
+  "tags": [
+    "tag1",
+    "tag2"
+  ],
+  "due": "2024-04-23T16:34:15Z"
+}
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+
+    client.test("Response content-type is json", function () {
+        var type = response.contentType.mimeType;
+        client.assert(type === "application/json", "Expected 'application/json' but received '" + type + "'");
+    });
+%}
+
+### Delete task
+DELETE http://{{host}}:{{port}}/api/v1/task/1
+Accept: application/json
+Content-Type: application/json
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+
+    client.test("Response content-type is json", function () {
+        var type = response.contentType.mimeType;
+        client.assert(type === "application/json", "Expected 'application/json' but received '" + type + "'");
+    });
+%}
+
+### Delete all tasks
+DELETE http://{{host}}:{{port}}/api/v1/task
+Accept: application/json
+Content-Type: application/json
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+
+    client.test("Response content-type is json", function () {
+        var type = response.contentType.mimeType;
+        client.assert(type === "application/json", "Expected 'application/json' but received '" + type + "'");
+    });
+%}
+
+### Get all tasks with tag
+GET http://{{host}}:{{port}}/api/v1/task/tag1
+Accept: application/json
+Content-Type: application/json
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+
+    client.test("Response content-type is json", function () {
+        var type = response.contentType.mimeType;
+        client.assert(type === "application/json", "Expected 'application/json' but received '" + type + "'");
+    });
+%}
+
+### Get all tasks by date
+GET http://{{host}}:{{port}}/api/v1/task/2024/04/23
+Accept: application/json
+Content-Type: application/json
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+
+    client.test("Response content-type is json", function () {
+        var type = response.contentType.mimeType;
+        client.assert(type === "application/json", "Expected 'application/json' but received '" + type + "'");
+    });
+%}
